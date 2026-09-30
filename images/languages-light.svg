@@ -4,19 +4,19 @@
   <clipPath id="bar"><rect x="24" y="52" width="312" height="8" rx="4"/></clipPath>
   <rect x="24" y="52" width="312" height="8" rx="4" fill="#DDE9E7"/>
   <g clip-path="url(#bar)">
-    <rect x="24.00" y="52" width="237.10" height="8" fill="#3178c6"/>
-    <rect x="261.10" y="52" width="59.45" height="8" fill="#e34c26"/>
-    <rect x="320.55" y="52" width="5.89" height="8" fill="#f1e05a"/>
-    <rect x="326.43" y="52" width="4.76" height="8" fill="#ff5a03"/>
-    <rect x="331.20" y="52" width="3.07" height="8" fill="#663399"/>
-    <rect x="334.26" y="52" width="2.00" height="8" fill="#3572A5"/>
+    <rect x="24.00" y="52" width="236.58" height="8" fill="#3178c6"/>
+    <rect x="260.58" y="52" width="59.32" height="8" fill="#e34c26"/>
+    <rect x="319.91" y="52" width="6.55" height="8" fill="#f1e05a"/>
+    <rect x="326.46" y="52" width="4.75" height="8" fill="#ff5a03"/>
+    <rect x="331.21" y="52" width="3.06" height="8" fill="#663399"/>
+    <rect x="334.27" y="52" width="2.00" height="8" fill="#3572A5"/>
   </g>
   <circle cx="29" cy="84" r="5" fill="#3178c6"/>
-  <text x="40" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">TypeScript <tspan fill="#5B6B69">75.8%</tspan></text>
+  <text x="40" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">TypeScript <tspan fill="#5B6B69">75.7%</tspan></text>
   <circle cx="185" cy="84" r="5" fill="#e34c26"/>
   <text x="196" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">HTML <tspan fill="#5B6B69">19.0%</tspan></text>
   <circle cx="29" cy="106" r="5" fill="#f1e05a"/>
-  <text x="40" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">JavaScript <tspan fill="#5B6B69">1.9%</tspan></text>
+  <text x="40" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">JavaScript <tspan fill="#5B6B69">2.1%</tspan></text>
   <circle cx="185" cy="106" r="5" fill="#ff5a03"/>
   <text x="196" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">Astro <tspan fill="#5B6B69">1.5%</tspan></text>
   <circle cx="29" cy="128" r="5" fill="#663399"/>
