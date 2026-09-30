@@ -4,10 +4,10 @@
   <clipPath id="bar"><rect x="24" y="52" width="312" height="8" rx="4"/></clipPath>
   <rect x="24" y="52" width="312" height="8" rx="4" fill="#2A333D"/>
   <g clip-path="url(#bar)">
-    <rect x="24.00" y="52" width="236.58" height="8" fill="#3178c6"/>
-    <rect x="260.58" y="52" width="59.32" height="8" fill="#e34c26"/>
-    <rect x="319.91" y="52" width="6.55" height="8" fill="#f1e05a"/>
-    <rect x="326.46" y="52" width="4.75" height="8" fill="#ff5a03"/>
+    <rect x="24.00" y="52" width="236.59" height="8" fill="#3178c6"/>
+    <rect x="260.59" y="52" width="59.32" height="8" fill="#e34c26"/>
+    <rect x="319.91" y="52" width="6.54" height="8" fill="#f1e05a"/>
+    <rect x="326.45" y="52" width="4.75" height="8" fill="#ff5a03"/>
     <rect x="331.21" y="52" width="3.06" height="8" fill="#ab8fc7"/>
     <rect x="334.27" y="52" width="2.00" height="8" fill="#3572A5"/>
   </g>
