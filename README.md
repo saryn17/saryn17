@@ -19,8 +19,9 @@
 </div>
 
 <!--
-  Activity cards are disabled while the profile reports 0 contributions.
-  Remove this comment wrapper once the contribution graph shows activity.
+  Activity cards are disabled while profile activity is private, because the
+  card services then read 0 contributions.
+  Remove this comment wrapper after making activity public.
 
 <div>
   <div align="center">
@@ -79,6 +80,42 @@
 <h2 align="center"><samp><strong>CONTRIBUTOR</strong></samp></h2><br>
 
 <div align="center">
+  <a href="https://github.com/microsoft/azure-devops-mcp" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
+      />
+      <source
+        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
+      />
+      <img
+        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
+        height="81.5vh"
+        alt="microsoft/azure-devops-mcp"
+        title="contributor"
+      />
+    </picture>
+  </a>
+  <a href="https://github.com/pingcap/docs" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
+      />
+      <source
+        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
+      />
+      <img
+        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
+        height="81.5vh"
+        alt="pingcap/docs"
+        title="contributor"
+      />
+    </picture>
+  </a>
   <a href="https://github.com/eslint/eslint" target="_blank" rel="noopener noreferrer">
     <picture>
       <source
@@ -97,82 +134,6 @@
       />
     </picture>
   </a>
-  <a href="https://github.com/vitest-dev/vitest" target="_blank" rel="noopener noreferrer">
-    <picture>
-      <source
-        media="(prefers-color-scheme: dark)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=vitest-dev&repo=vitest&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
-      />
-      <source
-        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=vitest-dev&repo=vitest&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
-      />
-      <img
-        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=vitest-dev&repo=vitest&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
-        height="81.5vh"
-        alt="vitest-dev/vitest"
-        title="contributor"
-      />
-    </picture>
-  </a>
-  <a href="https://github.com/honojs/hono" target="_blank" rel="noopener noreferrer">
-    <picture>
-      <source
-        media="(prefers-color-scheme: dark)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=honojs&repo=hono&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
-      />
-      <source
-        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=honojs&repo=hono&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
-      />
-      <img
-        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=honojs&repo=hono&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
-        height="81.5vh"
-        alt="honojs/hono"
-        title="contributor"
-      />
-    </picture>
-  </a>
-
-  <details>
-    <summary><kbd>D</kbd><kbd>E</kbd><kbd>T</kbd><kbd>A</kbd><kbd>I</kbd><kbd>L</kbd><kbd>S</kbd></summary><br>
-    <a href="https://github.com/microsoft/azure-devops-mcp" target="_blank" rel="noopener noreferrer">
-      <picture>
-        <source
-          media="(prefers-color-scheme: dark)"
-          srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
-        />
-        <source
-          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
-        />
-        <img
-          src="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
-          height="81.5vh"
-          alt="microsoft/azure-devops-mcp"
-          title="contributor"
-        />
-      </picture>
-    </a>
-    <a href="https://github.com/pingcap/docs" target="_blank" rel="noopener noreferrer">
-      <picture>
-        <source
-          media="(prefers-color-scheme: dark)"
-          srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
-        />
-        <source
-          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
-        />
-        <img
-          src="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
-          height="81.5vh"
-          alt="pingcap/docs"
-          title="contributor"
-        />
-      </picture>
-    </a>
-  </details>
 </div>
 
 <div align="center">
