@@ -22,11 +22,6 @@
 <!-- Generated daily by .github/workflows/update-cards.yml -->
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./images/stats-dark.svg" />
-    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/stats-light.svg" />
-    <img src="./images/stats-light.svg" width="400" alt="sary's external pull requests" />
-  </picture>
-  <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./images/pr-languages-dark.svg" />
     <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/pr-languages-light.svg" />
     <img src="./images/pr-languages-light.svg" width="400" alt="Languages in sary's merged pull requests" />
