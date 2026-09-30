@@ -13,9 +13,14 @@ const HAS_USER_TOKEN = Boolean(process.env.STATS_TOKEN);
 const TOP_LANGUAGES = 6;
 
 const THEMES = {
-  light: { accent: '#0E6E66', muted: '#3A9188', text: '#1F2D2B', sub: '#5B6B69', bg: '#F3F8F7', track: '#DDE9E7' },
-  dark: { accent: '#7FD1C7', muted: '#7FD1C7', text: '#FFFFFF', sub: '#9AA7B2', bg: '#151B23', track: '#2A333D', lightenDark: true },
+  light: { accent: '#0E6E66', muted: '#3A9188', text: '#1F2D2B', sub: '#5B6B69', bg: '#F3F8F7', track: '#DDE9E7', border: '#D1D9E0' },
+  dark: { accent: '#7FD1C7', muted: '#7FD1C7', text: '#FFFFFF', sub: '#9AA7B2', bg: '#151B23', track: '#2A333D', border: '#3D444D', lightenDark: true },
 };
+
+// Two language cards side by side plus the gap GitHub renders between inline
+// images; the stats card spans this width so every row lines up.
+const LANGUAGE_CARD_WIDTH = 400;
+const ROW_WIDTH = 808;
 
 // Colors from github-linguist; anything else falls back to FALLBACK_COLOR.
 const LANGUAGE_COLORS = {
@@ -158,7 +163,7 @@ function escapeXml(text) {
 
 function card(width, height, title, theme, body) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeXml(title)}">
-  <rect width="${width}" height="${height}" rx="10" fill="${theme.bg}"/>
+  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="9.5" fill="${theme.bg}" stroke="${theme.border}"/>
   <text x="24" y="36" font-family="${FONT}" font-size="15" font-weight="600" fill="${theme.accent}">${escapeXml(title)}</text>
 ${body}
 </svg>
@@ -170,24 +175,24 @@ function statsCard(stats, theme) {
     ['MERGED', stats.merged],
     ['REPOS', stats.repositories],
   ];
-  const width = 360;
+  const width = ROW_WIDTH;
   const step = (width - 48) / columns.length;
   const body = columns.map(([label, value], i) => {
     const x = 24 + step * i + step / 2;
-    return `  <text x="${x}" y="98" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="700" fill="${theme.text}">${value}</text>
-  <text x="${x}" y="124" text-anchor="middle" font-family="${FONT}" font-size="11" font-weight="600" letter-spacing="1" fill="${theme.sub}">${label}</text>`;
+    return `  <text x="${x}" y="88" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="700" fill="${theme.text}">${value}</text>
+  <text x="${x}" y="110" text-anchor="middle" font-family="${FONT}" font-size="11" font-weight="600" letter-spacing="1" fill="${theme.sub}">${label}</text>`;
   }).join('\n');
-  return card(width, 154, 'External pull requests', theme, body);
+  return card(width, 128, 'External pull requests', theme, body);
 }
 
 function languagesCard(title, languages, theme) {
-  const width = 360;
+  const width = LANGUAGE_CARD_WIDTH;
   const barWidth = width - 48;
   let offset = 24;
   languages = languages.map((language) => ({ ...language, color: readableColor(language.color, theme) }));
   const segments = languages.map(({ share, color }) => {
     const segmentWidth = Math.max(barWidth * share / languages.reduce((a, l) => a + l.share, 0), 2);
-    const rect = `    <rect x="${offset.toFixed(2)}" y="52" width="${segmentWidth.toFixed(2)}" height="8" fill="${color}"/>`;
+    const rect = `    <rect x="${offset.toFixed(2)}" y="52" width="${segmentWidth.toFixed(2)}" height="8" fill="${color}" stroke="${theme.bg}" stroke-width="1"/>`;
     offset += segmentWidth;
     return rect;
   }).join('\n');

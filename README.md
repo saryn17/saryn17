@@ -12,10 +12,11 @@
 -->
 
 <div align="center">
-  <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=90&color=0:DDF1EC,100:7FD1C7&section=header&reversal=false"
-    aria-hidden="true"
-  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&height=90&color=0:112B2B%2C100:14B8A6&section=header&reversal=false" />
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://capsule-render.vercel.app/api?type=waving&height=90&color=0:DDF1EC%2C100:7FD1C7&section=header&reversal=false" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=90&color=0:DDF1EC,100:7FD1C7&section=header&reversal=false" aria-hidden="true" />
+  </picture>
 </div>
 
 <!-- Generated daily by .github/workflows/update-cards.yml -->
@@ -23,7 +24,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./images/stats-dark.svg" />
     <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/stats-light.svg" />
-    <img src="./images/stats-light.svg" height="154" alt="sary's external pull requests" />
+    <img src="./images/stats-light.svg" height="128" hspace="2" alt="sary's external pull requests" />
   </picture>
 </div>
 
@@ -31,12 +32,12 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./images/languages-dark.svg" />
     <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/languages-light.svg" />
-    <img src="./images/languages-light.svg" height="154" alt="Languages in sary's repositories" />
+    <img src="./images/languages-light.svg" height="154" hspace="2" alt="Languages in sary's repositories" />
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./images/pr-languages-dark.svg" />
     <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/pr-languages-light.svg" />
-    <img src="./images/pr-languages-light.svg" height="154" alt="Languages in sary's merged pull requests" />
+    <img src="./images/pr-languages-light.svg" height="154" hspace="2" alt="Languages in sary's merged pull requests" />
   </picture>
 </div>
 
@@ -99,59 +100,63 @@
 </div>
 -->
 
-<h2 align="center"><samp><strong>CONTRIBUTIONS</strong></samp></h2><br>
+<h2 align="center"><samp><strong>CONTRIBUTIONS</strong></samp></h2>
 
 <div align="center">
   <a href="https://github.com/microsoft/azure-devops-mcp" target="_blank" rel="noopener noreferrer"><picture>
       <source
         media="(prefers-color-scheme: dark)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=false&border_color=3D444D&description_lines_count=1"
       />
       <source
         media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
       />
       <img
-        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
-        height="81.5vh"
+        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
+        height="120"
+        hspace="2"
         alt="microsoft/azure-devops-mcp"
         title="contributor"
       /></picture></a>
   <a href="https://github.com/pingcap/docs" target="_blank" rel="noopener noreferrer"><picture>
       <source
         media="(prefers-color-scheme: dark)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=false&border_color=3D444D&description_lines_count=1"
       />
       <source
         media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
       />
       <img
-        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
-        height="81.5vh"
+        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
+        height="120"
+        hspace="2"
         alt="pingcap/docs"
         title="contributor"
       /></picture></a>
   <a href="https://github.com/eslint/eslint" target="_blank" rel="noopener noreferrer"><picture>
       <source
         media="(prefers-color-scheme: dark)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=eslint&repo=eslint&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=eslint&repo=eslint&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=false&border_color=3D444D&description_lines_count=1"
       />
       <source
         media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=eslint&repo=eslint&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=eslint&repo=eslint&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
       />
       <img
-        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=eslint&repo=eslint&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=true&description_lines_count=1"
-        height="81.5vh"
+        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=eslint&repo=eslint&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
+        height="120"
+        hspace="2"
         alt="eslint/eslint"
         title="contributor"
       /></picture></a>
 </div>
 
 <div align="center">
-  <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=90&color=0:DDF1EC,100:7FD1C7&section=footer&reversal=false"
-    aria-hidden="true"
-  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&height=90&color=0:112B2B%2C100:14B8A6&section=footer&reversal=false" />
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://capsule-render.vercel.app/api?type=waving&height=90&color=0:DDF1EC%2C100:7FD1C7&section=footer&reversal=false" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=90&color=0:DDF1EC,100:7FD1C7&section=footer&reversal=false" aria-hidden="true" />
+  </picture>
 </div>

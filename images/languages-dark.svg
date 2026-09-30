@@ -1,26 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="154" viewBox="0 0 360 154" role="img" aria-label="Languages in my repositories">
-  <rect width="360" height="154" rx="10" fill="#151B23"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="154" viewBox="0 0 400 154" role="img" aria-label="Languages in my repositories">
+  <rect x="0.5" y="0.5" width="399" height="153" rx="9.5" fill="#151B23" stroke="#3D444D"/>
   <text x="24" y="36" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7FD1C7">Languages in my repositories</text>
-  <clipPath id="bar"><rect x="24" y="52" width="312" height="8" rx="4"/></clipPath>
-  <rect x="24" y="52" width="312" height="8" rx="4" fill="#2A333D"/>
+  <clipPath id="bar"><rect x="24" y="52" width="352" height="8" rx="4"/></clipPath>
+  <rect x="24" y="52" width="352" height="8" rx="4" fill="#2A333D"/>
   <g clip-path="url(#bar)">
-    <rect x="24.00" y="52" width="236.59" height="8" fill="#3178c6"/>
-    <rect x="260.59" y="52" width="59.32" height="8" fill="#e34c26"/>
-    <rect x="319.91" y="52" width="6.54" height="8" fill="#f1e05a"/>
-    <rect x="326.45" y="52" width="4.75" height="8" fill="#ff5a03"/>
-    <rect x="331.21" y="52" width="3.06" height="8" fill="#ab8fc7"/>
-    <rect x="334.27" y="52" width="2.00" height="8" fill="#3572A5"/>
+    <rect x="24.00" y="52" width="266.92" height="8" fill="#3178c6" stroke="#151B23" stroke-width="1"/>
+    <rect x="290.92" y="52" width="66.93" height="8" fill="#e34c26" stroke="#151B23" stroke-width="1"/>
+    <rect x="357.85" y="52" width="7.38" height="8" fill="#f1e05a" stroke="#151B23" stroke-width="1"/>
+    <rect x="365.23" y="52" width="5.36" height="8" fill="#ff5a03" stroke="#151B23" stroke-width="1"/>
+    <rect x="370.59" y="52" width="3.45" height="8" fill="#ab8fc7" stroke="#151B23" stroke-width="1"/>
+    <rect x="374.04" y="52" width="2.00" height="8" fill="#3572A5" stroke="#151B23" stroke-width="1"/>
   </g>
   <circle cx="29" cy="84" r="5" fill="#3178c6"/>
   <text x="40" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">TypeScript <tspan fill="#9AA7B2">75.7%</tspan></text>
-  <circle cx="185" cy="84" r="5" fill="#e34c26"/>
-  <text x="196" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">HTML <tspan fill="#9AA7B2">19.0%</tspan></text>
+  <circle cx="205" cy="84" r="5" fill="#e34c26"/>
+  <text x="216" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">HTML <tspan fill="#9AA7B2">19.0%</tspan></text>
   <circle cx="29" cy="106" r="5" fill="#f1e05a"/>
   <text x="40" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">JavaScript <tspan fill="#9AA7B2">2.1%</tspan></text>
-  <circle cx="185" cy="106" r="5" fill="#ff5a03"/>
-  <text x="196" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">Astro <tspan fill="#9AA7B2">1.5%</tspan></text>
+  <circle cx="205" cy="106" r="5" fill="#ff5a03"/>
+  <text x="216" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">Astro <tspan fill="#9AA7B2">1.5%</tspan></text>
   <circle cx="29" cy="128" r="5" fill="#ab8fc7"/>
   <text x="40" y="132" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">CSS <tspan fill="#9AA7B2">1.0%</tspan></text>
-  <circle cx="185" cy="128" r="5" fill="#3572A5"/>
-  <text x="196" y="132" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">Python <tspan fill="#9AA7B2">0.6%</tspan></text>
+  <circle cx="205" cy="128" r="5" fill="#3572A5"/>
+  <text x="216" y="132" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">Python <tspan fill="#9AA7B2">0.6%</tspan></text>
 </svg>
