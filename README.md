@@ -24,20 +24,17 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./images/stats-dark.svg" />
     <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/stats-light.svg" />
-    <img src="./images/stats-light.svg" height="128" hspace="2" alt="sary's external pull requests" />
-  </picture>
-</div>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./images/languages-dark.svg" />
-    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/languages-light.svg" />
-    <img src="./images/languages-light.svg" height="154" hspace="2" alt="Languages in sary's repositories" />
+    <img src="./images/stats-light.svg" width="400" alt="sary's external pull requests" />
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./images/pr-languages-dark.svg" />
     <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/pr-languages-light.svg" />
-    <img src="./images/pr-languages-light.svg" height="154" hspace="2" alt="Languages in sary's merged pull requests" />
+    <img src="./images/pr-languages-light.svg" width="400" alt="Languages in sary's merged pull requests" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./images/languages-dark.svg" />
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/languages-light.svg" />
+    <img src="./images/languages-light.svg" width="400" alt="Languages in sary's repositories" />
   </picture>
 </div>
 
@@ -114,8 +111,7 @@
       />
       <img
         src="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
-        height="120"
-        hspace="2"
+        width="400"
         alt="microsoft/azure-devops-mcp"
         title="contributor"
       /></picture></a>
@@ -130,8 +126,7 @@
       />
       <img
         src="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
-        height="120"
-        hspace="2"
+        width="400"
         alt="pingcap/docs"
         title="contributor"
       /></picture></a>
@@ -146,8 +141,7 @@
       />
       <img
         src="https://github-readme-stats-fast.vercel.app/api/pin/?username=eslint&repo=eslint&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
-        height="120"
-        hspace="2"
+        width="400"
         alt="eslint/eslint"
         title="contributor"
       /></picture></a>

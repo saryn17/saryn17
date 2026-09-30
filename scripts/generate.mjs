@@ -17,10 +17,10 @@ const THEMES = {
   dark: { accent: '#7FD1C7', muted: '#7FD1C7', text: '#FFFFFF', sub: '#9AA7B2', bg: '#151B23', track: '#2A333D', border: '#3D444D', lightenDark: true },
 };
 
-// Two language cards side by side plus the gap GitHub renders between inline
-// images; the stats card spans this width so every row lines up.
-const LANGUAGE_CARD_WIDTH = 400;
-const ROW_WIDTH = 808;
+// Every card shares one size so the README can let them wrap: two per row on
+// desktop, one per row on mobile, all at the same scale.
+const CARD_WIDTH = 400;
+const CARD_HEIGHT = 154;
 
 // Colors from github-linguist; anything else falls back to FALLBACK_COLOR.
 const LANGUAGE_COLORS = {
@@ -175,18 +175,18 @@ function statsCard(stats, theme) {
     ['MERGED', stats.merged],
     ['REPOS', stats.repositories],
   ];
-  const width = ROW_WIDTH;
+  const width = CARD_WIDTH;
   const step = (width - 48) / columns.length;
   const body = columns.map(([label, value], i) => {
     const x = 24 + step * i + step / 2;
-    return `  <text x="${x}" y="88" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="700" fill="${theme.text}">${value}</text>
-  <text x="${x}" y="110" text-anchor="middle" font-family="${FONT}" font-size="11" font-weight="600" letter-spacing="1" fill="${theme.sub}">${label}</text>`;
+    return `  <text x="${x}" y="98" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="700" fill="${theme.text}">${value}</text>
+  <text x="${x}" y="124" text-anchor="middle" font-family="${FONT}" font-size="11" font-weight="600" letter-spacing="1" fill="${theme.sub}">${label}</text>`;
   }).join('\n');
-  return card(width, 128, 'External pull requests', theme, body);
+  return card(width, CARD_HEIGHT, 'External pull requests', theme, body);
 }
 
 function languagesCard(title, languages, theme) {
-  const width = LANGUAGE_CARD_WIDTH;
+  const width = CARD_WIDTH;
   const barWidth = width - 48;
   let offset = 24;
   languages = languages.map((language) => ({ ...language, color: readableColor(language.color, theme) }));
@@ -202,14 +202,13 @@ function languagesCard(title, languages, theme) {
     return `  <circle cx="${x + 5}" cy="${y - 4}" r="5" fill="${color}"/>
   <text x="${x + 16}" y="${y}" font-family="${FONT}" font-size="12" fill="${theme.text}">${escapeXml(name)} <tspan fill="${theme.sub}">${(share * 100).toFixed(1)}%</tspan></text>`;
   }).join('\n');
-  const height = 88 + Math.ceil(TOP_LANGUAGES / 2) * 22;
   const body = `  <clipPath id="bar"><rect x="24" y="52" width="${barWidth}" height="8" rx="4"/></clipPath>
   <rect x="24" y="52" width="${barWidth}" height="8" rx="4" fill="${theme.track}"/>
   <g clip-path="url(#bar)">
 ${segments}
   </g>
 ${legend}`;
-  return card(width, height, title, theme, body);
+  return card(width, CARD_HEIGHT, title, theme, body);
 }
 
 const [merged, repositoryLanguages] = await Promise.all([
