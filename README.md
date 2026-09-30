@@ -25,10 +25,18 @@
     <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/stats-light.svg" />
     <img src="./images/stats-light.svg" height="154" alt="sary's external pull requests" />
   </picture>
+</div>
+
+<div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./images/languages-dark.svg" />
     <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/languages-light.svg" />
-    <img src="./images/languages-light.svg" height="154" alt="sary's languages" />
+    <img src="./images/languages-light.svg" height="154" alt="Languages in sary's repositories" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./images/pr-languages-dark.svg" />
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/pr-languages-light.svg" />
+    <img src="./images/pr-languages-light.svg" height="154" alt="Languages in sary's merged pull requests" />
   </picture>
 </div>
 

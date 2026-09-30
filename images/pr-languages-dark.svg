@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="154" viewBox="0 0 360 154" role="img" aria-label="Languages in merged pull requests">
+  <rect width="360" height="154" rx="10" fill="#151B23"/>
+  <text x="24" y="36" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7FD1C7">Languages in merged pull requests</text>
+  <clipPath id="bar"><rect x="24" y="52" width="312" height="8" rx="4"/></clipPath>
+  <rect x="24" y="52" width="312" height="8" rx="4" fill="#2A333D"/>
+  <g clip-path="url(#bar)">
+    <rect x="24.00" y="52" width="168.71" height="8" fill="#3178c6"/>
+    <rect x="192.71" y="52" width="71.64" height="8" fill="#f1e05a"/>
+    <rect x="264.36" y="52" width="71.64" height="8" fill="#7795cb"/>
+  </g>
+  <circle cx="29" cy="84" r="5" fill="#3178c6"/>
+  <text x="40" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">TypeScript <tspan fill="#9AA7B2">54.1%</tspan></text>
+  <circle cx="185" cy="84" r="5" fill="#f1e05a"/>
+  <text x="196" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">JavaScript <tspan fill="#9AA7B2">23.0%</tspan></text>
+  <circle cx="29" cy="106" r="5" fill="#7795cb"/>
+  <text x="40" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">Markdown <tspan fill="#9AA7B2">23.0%</tspan></text>
+</svg>

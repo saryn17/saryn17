@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="154" viewBox="0 0 360 154" role="img" aria-label="Languages">
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="154" viewBox="0 0 360 154" role="img" aria-label="Languages in my repositories">
   <rect width="360" height="154" rx="10" fill="#F3F8F7"/>
-  <text x="24" y="36" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0E6E66">Languages</text>
+  <text x="24" y="36" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0E6E66">Languages in my repositories</text>
   <clipPath id="bar"><rect x="24" y="52" width="312" height="8" rx="4"/></clipPath>
   <rect x="24" y="52" width="312" height="8" rx="4" fill="#DDE9E7"/>
   <g clip-path="url(#bar)">
