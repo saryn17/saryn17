@@ -1,10 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="154" viewBox="0 0 360 154" role="img" aria-label="External pull requests">
   <rect width="360" height="154" rx="10" fill="#F3F8F7"/>
   <text x="24" y="36" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0E6E66">External pull requests</text>
-  <text x="76" y="98" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1F2D2B">6</text>
-  <text x="76" y="124" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1" fill="#5B6B69">MERGED</text>
-  <text x="180" y="98" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1F2D2B">5</text>
-  <text x="180" y="124" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1" fill="#5B6B69">REPOS</text>
-  <text x="284" y="98" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1F2D2B">20</text>
-  <text x="284" y="124" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1" fill="#5B6B69">IN REVIEW</text>
+  <text x="102" y="98" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1F2D2B">6</text>
+  <text x="102" y="124" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1" fill="#5B6B69">MERGED</text>
+  <text x="258" y="98" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1F2D2B">5</text>
+  <text x="258" y="124" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1" fill="#5B6B69">REPOS</text>
 </svg>

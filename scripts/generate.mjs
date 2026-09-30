@@ -169,7 +169,6 @@ function statsCard(stats, theme) {
   const columns = [
     ['MERGED', stats.merged],
     ['REPOS', stats.repositories],
-    ['IN REVIEW', stats.open],
   ];
   const width = 360;
   const step = (width - 48) / columns.length;
@@ -208,13 +207,12 @@ ${legend}`;
   return card(width, height, title, theme, body);
 }
 
-const [merged, open, repositoryLanguages] = await Promise.all([
+const [merged, repositoryLanguages] = await Promise.all([
   searchPullRequests('is:merged'),
-  searchPullRequests('is:open'),
   HAS_USER_TOKEN ? countRepositoryLanguages() : null,
 ]);
 const pullRequestLanguages = await countPullRequestLanguages(merged.pulls);
-const stats = { merged: merged.count, repositories: merged.repositories.size, open: open.count };
+const stats = { merged: merged.count, repositories: merged.repositories.size };
 console.log(JSON.stringify({ ...stats, mergedRepositories: [...merged.repositories], repositoryLanguages, pullRequestLanguages }, null, 2));
 
 await mkdir('images', { recursive: true });
