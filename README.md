@@ -99,11 +99,10 @@
 </div>
 -->
 
-<h2 align="center"><samp><strong>CONTRIBUTOR</strong></samp></h2><br>
+<h2 align="center"><samp><strong>CONTRIBUTIONS</strong></samp></h2><br>
 
 <div align="center">
-  <a href="https://github.com/microsoft/azure-devops-mcp" target="_blank" rel="noopener noreferrer">
-    <picture>
+  <a href="https://github.com/microsoft/azure-devops-mcp" target="_blank" rel="noopener noreferrer"><picture>
       <source
         media="(prefers-color-scheme: dark)"
         srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=microsoft&repo=azure-devops-mcp&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
@@ -117,11 +116,8 @@
         height="81.5vh"
         alt="microsoft/azure-devops-mcp"
         title="contributor"
-      />
-    </picture>
-  </a>
-  <a href="https://github.com/pingcap/docs" target="_blank" rel="noopener noreferrer">
-    <picture>
+      /></picture></a>
+  <a href="https://github.com/pingcap/docs" target="_blank" rel="noopener noreferrer"><picture>
       <source
         media="(prefers-color-scheme: dark)"
         srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
@@ -135,11 +131,8 @@
         height="81.5vh"
         alt="pingcap/docs"
         title="contributor"
-      />
-    </picture>
-  </a>
-  <a href="https://github.com/eslint/eslint" target="_blank" rel="noopener noreferrer">
-    <picture>
+      /></picture></a>
+  <a href="https://github.com/eslint/eslint" target="_blank" rel="noopener noreferrer"><picture>
       <source
         media="(prefers-color-scheme: dark)"
         srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=eslint&repo=eslint&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=true&description_lines_count=1"
@@ -153,9 +146,7 @@
         height="81.5vh"
         alt="eslint/eslint"
         title="contributor"
-      />
-    </picture>
-  </a>
+      /></picture></a>
 </div>
 
 <div align="center">
