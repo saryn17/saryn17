@@ -18,6 +18,20 @@
   />
 </div>
 
+<!-- Generated daily by .github/workflows/update-cards.yml -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./images/stats-dark.svg" />
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/stats-light.svg" />
+    <img src="./images/stats-light.svg" height="154" alt="sary's external pull requests" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./images/languages-dark.svg" />
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/languages-light.svg" />
+    <img src="./images/languages-light.svg" height="154" alt="sary's languages" />
+  </picture>
+</div>
+
 <!--
   Activity cards are disabled while profile activity is private, because the
   card services then read 0 contributions.
