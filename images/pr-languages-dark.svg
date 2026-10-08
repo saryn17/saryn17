@@ -4,17 +4,17 @@
   <clipPath id="bar"><rect x="24" y="52" width="352" height="8" rx="4"/></clipPath>
   <rect x="24" y="52" width="352" height="8" rx="4" fill="#2A333D"/>
   <g clip-path="url(#bar)">
-    <rect x="24.00" y="52" width="181.60" height="8" fill="#3178c6" stroke="#151B23" stroke-width="1"/>
-    <rect x="205.60" y="52" width="79.60" height="8" fill="#7795cb" stroke="#151B23" stroke-width="1"/>
-    <rect x="285.20" y="52" width="77.12" height="8" fill="#f1e05a" stroke="#151B23" stroke-width="1"/>
-    <rect x="362.32" y="52" width="13.68" height="8" fill="#8b949e" stroke="#151B23" stroke-width="1"/>
+    <rect x="24.00" y="52" width="180.32" height="8" fill="#3178c6" stroke="#151B23" stroke-width="1"/>
+    <rect x="204.32" y="52" width="81.52" height="8" fill="#7795cb" stroke="#151B23" stroke-width="1"/>
+    <rect x="285.84" y="52" width="76.58" height="8" fill="#f1e05a" stroke="#151B23" stroke-width="1"/>
+    <rect x="362.41" y="52" width="13.59" height="8" fill="#8b949e" stroke="#151B23" stroke-width="1"/>
   </g>
   <circle cx="29" cy="84" r="5" fill="#3178c6"/>
-  <text x="40" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">TypeScript <tspan fill="#9AA7B2">51.6%</tspan></text>
+  <text x="40" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">TypeScript <tspan fill="#9AA7B2">51.2%</tspan></text>
   <circle cx="205" cy="84" r="5" fill="#7795cb"/>
-  <text x="216" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">Markdown <tspan fill="#9AA7B2">22.6%</tspan></text>
+  <text x="216" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">Markdown <tspan fill="#9AA7B2">23.2%</tspan></text>
   <circle cx="29" cy="106" r="5" fill="#f1e05a"/>
-  <text x="40" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">JavaScript <tspan fill="#9AA7B2">21.9%</tspan></text>
+  <text x="40" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">JavaScript <tspan fill="#9AA7B2">21.8%</tspan></text>
   <circle cx="205" cy="106" r="5" fill="#8b949e"/>
   <text x="216" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">Other <tspan fill="#9AA7B2">3.9%</tspan></text>
 </svg>
