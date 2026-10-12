@@ -30,7 +30,7 @@ const LANGUAGE_COLORS = {
   Kotlin: '#A97BFF', Vue: '#41b883', MDX: '#fcb32c', Astro: '#ff5a03', Bicep: '#519aba', PLpgSQL: '#336790',
   TSQL: '#e38c00', Makefile: '#427819', 'Jupyter Notebook': '#DA5B0B', Svelte: '#ff3e00',
   Markdown: '#083fa1', YAML: '#cb171e', JSON: '#292929', SQL: '#e38c00', TOML: '#9c4221', C: '#555555',
-  'C++': '#f34b7d', Other: '#8b949e',
+  'C++': '#f34b7d', Yacc: '#4B6C4B', Other: '#8b949e',
 };
 
 // Extensions of files changed in pull requests; unlisted ones count as Other.
@@ -40,7 +40,8 @@ const EXTENSION_LANGUAGES = {
   java: 'Java', go: 'Go', py: 'Python', rs: 'Rust', swift: 'Swift', rb: 'Ruby', kt: 'Kotlin', cs: 'C#',
   c: 'C', h: 'C', cc: 'C++', cpp: 'C++', hpp: 'C++', sh: 'Shell', ps1: 'PowerShell', psm1: 'PowerShell',
   tf: 'HCL', bicep: 'Bicep', sql: 'SQL', html: 'HTML', css: 'CSS', scss: 'SCSS', vue: 'Vue', svelte: 'Svelte',
-  astro: 'Astro', md: 'Markdown', mdx: 'MDX', yml: 'YAML', yaml: 'YAML', json: 'JSON', toml: 'TOML',
+  astro: 'Astro', md: 'Markdown', markdown: 'Markdown', mdx: 'MDX', yml: 'YAML', yaml: 'YAML', json: 'JSON',
+  toml: 'TOML', y: 'Yacc',
 };
 const FILENAME_LANGUAGES = { Dockerfile: 'Dockerfile', Makefile: 'Makefile' };
 // GitHub's language stats leave out generated files. Linguist finds lockfiles
