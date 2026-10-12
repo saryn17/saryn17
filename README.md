@@ -95,6 +95,21 @@
 <h2 align="center"><samp><strong>CONTRIBUTIONS</strong></samp></h2>
 
 <div align="center">
+  <a href="https://github.com/pingcap/tidb" target="_blank" rel="noopener noreferrer"><picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=tidb&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=false&border_color=3D444D&description_lines_count=1"
+      />
+      <source
+        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=tidb&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
+      />
+      <img
+        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=tidb&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
+        width="400"
+        alt="pingcap/tidb"
+        title="contributor"
+      /></picture></a>
   <a href="https://github.com/microsoft/azure-devops-mcp" target="_blank" rel="noopener noreferrer"><picture>
       <source
         media="(prefers-color-scheme: dark)"
@@ -110,21 +125,6 @@
         alt="microsoft/azure-devops-mcp"
         title="contributor"
       /></picture></a>
-  <a href="https://github.com/pingcap/docs" target="_blank" rel="noopener noreferrer"><picture>
-      <source
-        media="(prefers-color-scheme: dark)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=false&border_color=3D444D&description_lines_count=1"
-      />
-      <source
-        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
-      />
-      <img
-        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
-        width="400"
-        alt="pingcap/docs"
-        title="contributor"
-      /></picture></a>
   <a href="https://github.com/eslint/eslint" target="_blank" rel="noopener noreferrer"><picture>
       <source
         media="(prefers-color-scheme: dark)"
@@ -138,6 +138,21 @@
         src="https://github-readme-stats-fast.vercel.app/api/pin/?username=eslint&repo=eslint&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
         width="400"
         alt="eslint/eslint"
+        title="contributor"
+      /></picture></a>
+  <a href="https://github.com/pingcap/docs" target="_blank" rel="noopener noreferrer"><picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=7FD1C7&text_color=FFFFFF&title_color=7FD1C7&bg_color=151B23&border_radius=10&hide_border=false&border_color=3D444D&description_lines_count=1"
+      />
+      <source
+        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
+      />
+      <img
+        src="https://github-readme-stats-fast.vercel.app/api/pin/?username=pingcap&repo=docs&icon_color=3A9188&text_color=1F2D2B&title_color=0E6E66&bg_color=F3F8F7&border_radius=10&hide_border=false&border_color=D1D9E0&description_lines_count=1"
+        width="400"
+        alt="pingcap/docs"
         title="contributor"
       /></picture></a>
 </div>
