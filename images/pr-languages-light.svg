@@ -1,26 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="154" viewBox="0 0 400 154" role="img" aria-label="Languages in merged pull requests">
-  <rect x="0.5" y="0.5" width="399" height="153" rx="9.5" fill="#F3F8F7" stroke="#D1D9E0"/>
-  <text x="24" y="36" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0E6E66">Languages in merged pull requests</text>
-  <clipPath id="bar"><rect x="24" y="52" width="352" height="8" rx="4"/></clipPath>
-  <rect x="24" y="52" width="352" height="8" rx="4" fill="#DDE9E7"/>
-  <g clip-path="url(#bar)">
-    <rect x="24.00" y="52" width="94.24" height="8" fill="#b07219" stroke="#F3F8F7" stroke-width="1"/>
-    <rect x="118.24" y="52" width="74.37" height="8" fill="#3178c6" stroke="#F3F8F7" stroke-width="1"/>
-    <rect x="192.61" y="52" width="68.26" height="8" fill="#00ADD8" stroke="#F3F8F7" stroke-width="1"/>
-    <rect x="260.87" y="52" width="44.32" height="8" fill="#8b949e" stroke="#F3F8F7" stroke-width="1"/>
-    <rect x="305.19" y="52" width="39.22" height="8" fill="#083fa1" stroke="#F3F8F7" stroke-width="1"/>
-    <rect x="344.42" y="52" width="31.58" height="8" fill="#f1e05a" stroke="#F3F8F7" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="186" viewBox="0 0 400 186" role="img" aria-label="Languages in merged pull requests">
+  <defs>
+    <clipPath id="card"><rect x="0.5" y="0.5" width="399" height="185" rx="9.5"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2EADE"/>
+      <stop offset="1" stop-color="#E6D8C4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="88" cy="114" r="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D9A870" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#D9A870" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0.851  0 0 0 0 0.671  0 0 0 0 0.459  0 0 0 0.1 0"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="400" height="186" fill="url(#bg)"/>
+    <rect width="400" height="186" fill="url(#glow)"/>
+    <rect width="400" height="186" filter="url(#grain)"/>
   </g>
-  <circle cx="29" cy="84" r="5" fill="#b07219"/>
-  <text x="40" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">Java <tspan fill="#5B6B69">26.5%</tspan></text>
-  <circle cx="205" cy="84" r="5" fill="#3178c6"/>
-  <text x="216" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">TypeScript <tspan fill="#5B6B69">20.9%</tspan></text>
-  <circle cx="29" cy="106" r="5" fill="#00ADD8"/>
-  <text x="40" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">Go <tspan fill="#5B6B69">19.2%</tspan></text>
-  <circle cx="205" cy="106" r="5" fill="#8b949e"/>
-  <text x="216" y="110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">Other <tspan fill="#5B6B69">12.5%</tspan></text>
-  <circle cx="29" cy="128" r="5" fill="#083fa1"/>
-  <text x="40" y="132" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">Markdown <tspan fill="#5B6B69">11.0%</tspan></text>
-  <circle cx="205" cy="128" r="5" fill="#f1e05a"/>
-  <text x="216" y="132" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#1F2D2B">JavaScript <tspan fill="#5B6B69">8.9%</tspan></text>
+  <rect x="0.5" y="0.5" width="399" height="185" rx="9.5" fill="none" stroke="#D9C7B0"/>
+  <text x="24" y="36" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#4F2A18">Languages in merged pull requests</text>
+  <text x="376" y="36" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#7A6655">12 PRs · 10 repos</text>
+  <g transform="rotate(-90 88 114)">
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#5A3420" stroke-width="14" stroke-dasharray="72.52 203.94" stroke-dashoffset="0.00"/>
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#D9A870" stroke-width="14" stroke-dasharray="56.91 219.55" stroke-dashoffset="-74.02"/>
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#8A5232" stroke-width="14" stroke-dasharray="52.11 224.35" stroke-dashoffset="-132.43"/>
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#BFA286" stroke-width="14" stroke-dasharray="33.31 243.15" stroke-dashoffset="-186.04"/>
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#2B1A10" stroke-width="14" stroke-dasharray="29.31 247.15" stroke-dashoffset="-220.85"/>
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#B07A4A" stroke-width="14" stroke-dasharray="23.31 253.15" stroke-dashoffset="-251.65"/>
+  </g>
+  <circle cx="180" cy="62" r="4" fill="#5A3420" stroke="#D9C7B0" stroke-width="0.5"/>
+  <text x="190" y="66" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">Java</text>
+  <text x="376" y="66" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">26.5%</text>
+  <rect x="190" y="70" width="186" height="2" rx="1" fill="#E3D5C2"/>
+  <rect x="190" y="70" width="186.00" height="2" rx="1" fill="#5A3420"/>
+  <circle cx="180" cy="82" r="4" fill="#D9A870" stroke="#D9C7B0" stroke-width="0.5"/>
+  <text x="190" y="86" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">TypeScript</text>
+  <text x="376" y="86" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">20.9%</text>
+  <rect x="190" y="90" width="186" height="2" rx="1" fill="#E3D5C2"/>
+  <rect x="190" y="90" width="146.79" height="2" rx="1" fill="#D9A870"/>
+  <circle cx="180" cy="102" r="4" fill="#8A5232" stroke="#D9C7B0" stroke-width="0.5"/>
+  <text x="190" y="106" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">Go</text>
+  <text x="376" y="106" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">19.2%</text>
+  <rect x="190" y="110" width="186" height="2" rx="1" fill="#E3D5C2"/>
+  <rect x="190" y="110" width="134.72" height="2" rx="1" fill="#8A5232"/>
+  <circle cx="180" cy="122" r="4" fill="#BFA286" stroke="#D9C7B0" stroke-width="0.5"/>
+  <text x="190" y="126" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">Other</text>
+  <text x="376" y="126" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">12.5%</text>
+  <rect x="190" y="130" width="186" height="2" rx="1" fill="#E3D5C2"/>
+  <rect x="190" y="130" width="87.47" height="2" rx="1" fill="#BFA286"/>
+  <circle cx="180" cy="142" r="4" fill="#2B1A10" stroke="#D9C7B0" stroke-width="0.5"/>
+  <text x="190" y="146" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">Markdown</text>
+  <text x="376" y="146" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">11.0%</text>
+  <rect x="190" y="150" width="186" height="2" rx="1" fill="#E3D5C2"/>
+  <rect x="190" y="150" width="77.42" height="2" rx="1" fill="#2B1A10"/>
+  <circle cx="180" cy="162" r="4" fill="#B07A4A" stroke="#D9C7B0" stroke-width="0.5"/>
+  <text x="190" y="166" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">JavaScript</text>
+  <text x="376" y="166" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">8.9%</text>
+  <rect x="190" y="170" width="186" height="2" rx="1" fill="#E3D5C2"/>
+  <rect x="190" y="170" width="62.34" height="2" rx="1" fill="#B07A4A"/>
 </svg>
