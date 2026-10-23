@@ -12,26 +12,28 @@ const TOKEN = process.env.STATS_TOKEN || process.env.GITHUB_TOKEN;
 const HAS_USER_TOKEN = Boolean(process.env.STATS_TOKEN);
 const TOP_LANGUAGES = 6;
 
+// Coffee colors from saryn17.com. Dark is the site's espresso palette and light
+// is a latte version of it. Language slices take the palette in order of share,
+// alternating light and dark roasts so neighbouring slices stay apart. The glow
+// and grain draw the light behind the donut and the texture of the site's
+// background.
 const THEMES = {
-  light: { accent: '#0E6E66', muted: '#3A9188', text: '#1F2D2B', sub: '#5B6B69', bg: '#F3F8F7', track: '#DDE9E7', border: '#D1D9E0' },
-  dark: { accent: '#7FD1C7', muted: '#7FD1C7', text: '#FFFFFF', sub: '#9AA7B2', bg: '#151B23', track: '#2A333D', border: '#3D444D', lightenDark: true },
+  light: {
+    accent: '#4F2A18', muted: '#7A4A2E', text: '#2B1A10', sub: '#7A6655', bg: '#F2EADE', track: '#E3D5C2', border: '#D9C7B0',
+    palette: ['#5A3420', '#D9A870', '#8A5232', '#BFA286', '#2B1A10', '#B07A4A'],
+    bgEdge: '#E6D8C4', glow: '#D9A870', glowOpacity: 0.35, grain: 0.10,
+  },
+  dark: {
+    accent: '#E1B57E', muted: '#D9AB75', text: '#F2EADE', sub: '#C0B4A4', bg: '#17100B', track: '#271810', border: '#3A2618',
+    palette: ['#E1B57E', '#7A4A2E', '#F2EADE', '#B0703E', '#C9B39A', '#6B4530'],
+    bgEdge: '#0E0906', glow: '#A9784D', glowOpacity: 0.32, grain: 0.16,
+  },
 };
 
 // Every card shares one size so the README can let them wrap: two per row on
 // desktop, one per row on mobile, all at the same scale.
 const CARD_WIDTH = 400;
 const CARD_HEIGHT = 154;
-
-// Colors from github-linguist; anything else falls back to FALLBACK_COLOR.
-const LANGUAGE_COLORS = {
-  TypeScript: '#3178c6', JavaScript: '#f1e05a', Python: '#3572A5', Go: '#00ADD8', Java: '#b07219',
-  Shell: '#89e051', HTML: '#e34c26', CSS: '#663399', SCSS: '#c6538c', Rust: '#dea584', Swift: '#F05138',
-  Ruby: '#701516', 'C#': '#178600', PowerShell: '#012456', Dockerfile: '#384d54', HCL: '#844FBA',
-  Kotlin: '#A97BFF', Vue: '#41b883', MDX: '#fcb32c', Astro: '#ff5a03', Bicep: '#519aba', PLpgSQL: '#336790',
-  TSQL: '#e38c00', Makefile: '#427819', 'Jupyter Notebook': '#DA5B0B', Svelte: '#ff3e00',
-  Markdown: '#083fa1', YAML: '#cb171e', JSON: '#292929', SQL: '#e38c00', TOML: '#9c4221', C: '#555555',
-  'C++': '#f34b7d', Yacc: '#4B6C4B', Other: '#8b949e',
-};
 
 // Extensions of files changed in pull requests; unlisted ones count as Other.
 const EXTENSION_LANGUAGES = {
@@ -54,7 +56,6 @@ const LOCKFILES = new Set([
 ]);
 const GENERATED_HEADER = /^\/\/ Code generated /;
 const GENERATED_SCAN_LINES = 40;
-const FALLBACK_COLOR = '#8b949e';
 const FONT = "-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif";
 
 async function request(url, init = {}) {
@@ -190,17 +191,7 @@ function topLanguages(totals) {
   return [...totals.entries()]
     .sort((a, b) => b[1] - a[1])
     .slice(0, TOP_LANGUAGES)
-    .map(([name, bytes]) => ({ name, share: bytes / sum, color: LANGUAGE_COLORS[name] ?? FALLBACK_COLOR }));
-}
-
-// Mixes dark language colors with white so they stay visible on a dark card.
-function readableColor(color, theme) {
-  const [r, g, b] = [1, 3, 5].map((i) => parseInt(color.slice(i, i + 2), 16));
-  const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
-  if (!theme.lightenDark || luminance >= 0.3) {
-    return color;
-  }
-  return '#' + [r, g, b].map((c) => Math.round(c + (255 - c) * 0.45).toString(16).padStart(2, '0')).join('');
+    .map(([name, bytes]) => ({ name, share: bytes / sum }));
 }
 
 function escapeXml(text) {
@@ -231,30 +222,65 @@ function statsCard(stats, theme) {
   return card(width, CARD_HEIGHT, 'External pull requests', theme, body);
 }
 
-function languagesCard(title, languages, theme) {
-  const width = CARD_WIDTH;
-  const barWidth = width - 48;
-  let offset = 24;
-  languages = languages.map((language) => ({ ...language, color: readableColor(language.color, theme) }));
-  const segments = languages.map(({ share, color }) => {
-    const segmentWidth = Math.max(barWidth * share / languages.reduce((a, l) => a + l.share, 0), 2);
-    const rect = `    <rect x="${offset.toFixed(2)}" y="52" width="${segmentWidth.toFixed(2)}" height="8" fill="${color}" stroke="${theme.bg}" stroke-width="1"/>`;
-    offset += segmentWidth;
-    return rect;
+// Draws a donut of language slices over a glowing, grainy background. Each
+// slice is a dash of one circle's stroke, starting at 12 o'clock, with a small
+// gap so that thin slices stay distinguishable. The legend lists every language
+// with a bar scaled to the largest share.
+function languagesCard(title, languages, theme, note = '') {
+  const [width, height] = [CARD_WIDTH, 186];
+  const [cx, cy, radius, thickness, gap] = [88, 114, 44, 14, 1.5];
+  const circumference = 2 * Math.PI * radius;
+  const total = languages.reduce((a, l) => a + l.share, 0);
+  const largest = Math.max(...languages.map((l) => l.share));
+  let offset = 0;
+  languages = languages.map((language, i) => ({ ...language, color: theme.palette[i % theme.palette.length] }));
+  const slices = languages.map(({ share, color }) => {
+    const length = circumference * share / total;
+    const dash = Math.max(length - gap, 1);
+    const slice = `    <circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="${color}" stroke-width="${thickness}" stroke-dasharray="${dash.toFixed(2)} ${(circumference - dash).toFixed(2)}" stroke-dashoffset="${(-offset).toFixed(2)}"/>`;
+    offset += length;
+    return slice;
   }).join('\n');
+  const [legendX, legendRight, legendTop, rowHeight] = [176, width - 24, 66, 20];
   const legend = languages.map(({ name, share, color }, i) => {
-    const x = 24 + (i % 2) * (barWidth / 2);
-    const y = 88 + Math.floor(i / 2) * 22;
-    return `  <circle cx="${x + 5}" cy="${y - 4}" r="5" fill="${color}"/>
-  <text x="${x + 16}" y="${y}" font-family="${FONT}" font-size="12" fill="${theme.text}">${escapeXml(name)} <tspan fill="${theme.sub}">${(share * 100).toFixed(1)}%</tspan></text>`;
+    const y = legendTop + i * rowHeight;
+    const barWidth = (legendRight - legendX - 14) * share / largest;
+    return `  <circle cx="${legendX + 4}" cy="${y - 4}" r="4" fill="${color}" stroke="${theme.border}" stroke-width="0.5"/>
+  <text x="${legendX + 14}" y="${y}" font-family="${FONT}" font-size="12" fill="${theme.text}">${escapeXml(name)}</text>
+  <text x="${legendRight}" y="${y}" text-anchor="end" font-family="${FONT}" font-size="12" font-weight="600" fill="${theme.accent}">${(share * 100).toFixed(1)}%</text>
+  <rect x="${legendX + 14}" y="${y + 4}" width="${legendRight - legendX - 14}" height="2" rx="1" fill="${theme.track}"/>
+  <rect x="${legendX + 14}" y="${y + 4}" width="${barWidth.toFixed(2)}" height="2" rx="1" fill="${color}"/>`;
   }).join('\n');
-  const body = `  <clipPath id="bar"><rect x="24" y="52" width="${barWidth}" height="8" rx="4"/></clipPath>
-  <rect x="24" y="52" width="${barWidth}" height="8" rx="4" fill="${theme.track}"/>
-  <g clip-path="url(#bar)">
-${segments}
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeXml(title)}">
+  <defs>
+    <clipPath id="card"><rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="9.5"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="${theme.bg}"/>
+      <stop offset="1" stop-color="${theme.bgEdge}"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="${cx}" cy="${cy}" r="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="${theme.glow}" stop-opacity="${theme.glowOpacity}"/>
+      <stop offset="1" stop-color="${theme.glow}" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0.851  0 0 0 0 0.671  0 0 0 0 0.459  0 0 0 ${theme.grain} 0"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="${width}" height="${height}" fill="url(#bg)"/>
+    <rect width="${width}" height="${height}" fill="url(#glow)"/>
+    <rect width="${width}" height="${height}" filter="url(#grain)"/>
   </g>
-${legend}`;
-  return card(width, CARD_HEIGHT, title, theme, body);
+  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="9.5" fill="none" stroke="${theme.border}"/>
+  <text x="24" y="36" font-family="${FONT}" font-size="15" font-weight="600" fill="${theme.accent}">${escapeXml(title)}</text>
+  <text x="${width - 24}" y="36" text-anchor="end" font-family="${FONT}" font-size="11" fill="${theme.sub}">${escapeXml(note)}</text>
+  <g transform="rotate(-90 ${cx} ${cy})">
+${slices}
+  </g>
+${legend}
+</svg>
+`;
 }
 
 const [merged, repositoryLanguages] = await Promise.all([
@@ -268,7 +294,7 @@ console.log(JSON.stringify({ ...stats, mergedRepositories: [...merged.repositori
 await mkdir('images', { recursive: true });
 for (const [name, theme] of Object.entries(THEMES)) {
   await writeFile(`images/stats-${name}.svg`, statsCard(stats, theme));
-  await writeFile(`images/pr-languages-${name}.svg`, languagesCard('Languages in merged pull requests', pullRequestLanguages, theme));
+  await writeFile(`images/pr-languages-${name}.svg`, languagesCard('Languages in merged pull requests', pullRequestLanguages, theme, `${stats.merged} PRs · ${stats.repositories} repos`));
   if (repositoryLanguages) {
     await writeFile(`images/languages-${name}.svg`, languagesCard('Languages in my repositories', repositoryLanguages, theme));
   }
