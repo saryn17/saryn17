@@ -1,6 +1,6 @@
 <!-- Generated daily by .github/workflows/update-cards.yml -->
 <div align="center">
-  <p><sub><samp>Brewing...</samp></sub></p>
+  <p><samp>Brewing...</samp></p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./images/languages-dark.svg" />
     <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="./images/languages-light.svg" />
