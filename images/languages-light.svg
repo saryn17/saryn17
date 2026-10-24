@@ -23,41 +23,41 @@
   <text x="24" y="36" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#4F2A18">Languages in my repositories</text>
   <text x="376" y="36" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#7A6655"></text>
   <g transform="rotate(-90 88 114)">
-    <circle cx="88" cy="114" r="44" fill="none" stroke="#5A3420" stroke-width="14" stroke-dasharray="112.18 164.28" stroke-dashoffset="0.00"/>
-    <circle cx="88" cy="114" r="44" fill="none" stroke="#D9A870" stroke-width="14" stroke-dasharray="88.02 188.44" stroke-dashoffset="-113.68"/>
-    <circle cx="88" cy="114" r="44" fill="none" stroke="#8A5232" stroke-width="14" stroke-dasharray="29.96 246.50" stroke-dashoffset="-203.20"/>
-    <circle cx="88" cy="114" r="44" fill="none" stroke="#BFA286" stroke-width="14" stroke-dasharray="23.08 253.38" stroke-dashoffset="-234.65"/>
-    <circle cx="88" cy="114" r="44" fill="none" stroke="#2B1A10" stroke-width="14" stroke-dasharray="9.10 267.36" stroke-dashoffset="-259.24"/>
-    <circle cx="88" cy="114" r="44" fill="none" stroke="#B07A4A" stroke-width="14" stroke-dasharray="5.12 271.34" stroke-dashoffset="-269.84"/>
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#5A3420" stroke-width="14" stroke-dasharray="122.54 153.92" stroke-dashoffset="0.00"/>
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#D9A870" stroke-width="14" stroke-dasharray="78.68 197.78" stroke-dashoffset="-124.04"/>
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#8A5232" stroke-width="14" stroke-dasharray="26.68 249.78" stroke-dashoffset="-204.22"/>
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#BFA286" stroke-width="14" stroke-dasharray="20.52 255.94" stroke-dashoffset="-232.40"/>
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#2B1A10" stroke-width="14" stroke-dasharray="9.66 266.80" stroke-dashoffset="-254.42"/>
+    <circle cx="88" cy="114" r="44" fill="none" stroke="#B07A4A" stroke-width="14" stroke-dasharray="9.38 267.08" stroke-dashoffset="-265.58"/>
   </g>
   <circle cx="180" cy="62" r="4" fill="#5A3420" stroke="#D9C7B0" stroke-width="0.5"/>
   <text x="190" y="66" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">TypeScript</text>
-  <text x="376" y="66" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">39.5%</text>
+  <text x="376" y="66" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">43.2%</text>
   <rect x="190" y="70" width="186" height="2" rx="1" fill="#E3D5C2"/>
   <rect x="190" y="70" width="186.00" height="2" rx="1" fill="#5A3420"/>
   <circle cx="180" cy="82" r="4" fill="#D9A870" stroke="#D9C7B0" stroke-width="0.5"/>
   <text x="190" y="86" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">HTML</text>
-  <text x="376" y="86" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">31.1%</text>
+  <text x="376" y="86" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">27.9%</text>
   <rect x="190" y="90" width="186" height="2" rx="1" fill="#E3D5C2"/>
-  <rect x="190" y="90" width="146.46" height="2" rx="1" fill="#D9A870"/>
+  <rect x="190" y="90" width="120.23" height="2" rx="1" fill="#D9A870"/>
   <circle cx="180" cy="102" r="4" fill="#8A5232" stroke="#D9C7B0" stroke-width="0.5"/>
   <text x="190" y="106" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">Go</text>
-  <text x="376" y="106" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">10.9%</text>
+  <text x="376" y="106" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">9.8%</text>
   <rect x="190" y="110" width="186" height="2" rx="1" fill="#E3D5C2"/>
-  <rect x="190" y="110" width="51.47" height="2" rx="1" fill="#8A5232"/>
+  <rect x="190" y="110" width="42.25" height="2" rx="1" fill="#8A5232"/>
   <circle cx="180" cy="122" r="4" fill="#BFA286" stroke="#D9C7B0" stroke-width="0.5"/>
   <text x="190" y="126" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">JavaScript</text>
-  <text x="376" y="126" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">8.5%</text>
+  <text x="376" y="126" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">7.7%</text>
   <rect x="190" y="130" width="186" height="2" rx="1" fill="#E3D5C2"/>
-  <rect x="190" y="130" width="40.22" height="2" rx="1" fill="#BFA286"/>
+  <rect x="190" y="130" width="33.02" height="2" rx="1" fill="#BFA286"/>
   <circle cx="180" cy="142" r="4" fill="#2B1A10" stroke="#D9C7B0" stroke-width="0.5"/>
-  <text x="190" y="146" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">CSS</text>
-  <text x="376" y="146" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">3.7%</text>
+  <text x="190" y="146" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">GLSL</text>
+  <text x="376" y="146" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">3.9%</text>
   <rect x="190" y="150" width="186" height="2" rx="1" fill="#E3D5C2"/>
-  <rect x="190" y="150" width="17.35" height="2" rx="1" fill="#2B1A10"/>
+  <rect x="190" y="150" width="16.73" height="2" rx="1" fill="#2B1A10"/>
   <circle cx="180" cy="162" r="4" fill="#B07A4A" stroke="#D9C7B0" stroke-width="0.5"/>
-  <text x="190" y="166" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">GLSL</text>
-  <text x="376" y="166" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">2.3%</text>
+  <text x="190" y="166" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#2B1A10">CSS</text>
+  <text x="376" y="166" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#4F2A18">3.8%</text>
   <rect x="190" y="170" width="186" height="2" rx="1" fill="#E3D5C2"/>
-  <rect x="190" y="170" width="10.83" height="2" rx="1" fill="#B07A4A"/>
+  <rect x="190" y="170" width="16.31" height="2" rx="1" fill="#B07A4A"/>
 </svg>
